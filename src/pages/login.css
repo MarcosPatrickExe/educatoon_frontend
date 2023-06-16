@@ -1,20 +1,21 @@
 
 
 .box{
-  background-image: url(../assets/wav-login.svg) ;
+  background-image: url(../assets/wav-login2.svg) ;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .container-login{
   width: 80%;
-  height: 100%;
+  height: 85%;
   display: flex;
+  /* background-color: black; */
 }
 
 .left-side{
@@ -24,11 +25,76 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* background-color: #949494; */
 }
 .left-side h1{
   font-family: 'Baloo 2', cursive;
   font-weight: 700;
   color: #715AFF;
+}
+
+.infos-login{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* background-color: black; */
+}
+
+.infos-login h1{
+  margin-bottom: 15px;
+}
+
+.btns-social-media{
+  display: flex;
+  justify-content: space-between;
+  width: 32%;
+  margin-bottom: 15px;
+}
+
+.btn-social-media{
+  width: 45px;
+  height: 45px;
+  background-color: #F7F8FA;
+  border: solid 1px #C3C8D4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-social-media img{
+  width: 50%;
+  height: 50%;
+}
+.btn-social-media:hover{
+  background-color: #C3C8D4;
+}
+
+.checkbox-secao{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blue; */
+}
+.lem-esq-senha p, a{
+  margin-bottom: 0px;
+}
+
+#checkboxNoLabel{
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+#checkboxNoLabel:checked{
+  background-color: #715AFF;
+  color: #715AFF;
+}
+
+.box p, a{
+  color: #949494;
+  font-size: 17px;
 }
 
 .right-side{
@@ -37,20 +103,30 @@
   align-items: center;
   height: 100%;
   width: 45%;
+  /* background-color: antiquewhite; */
 }
 
 .figura-login{
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
 }
 
 .campos{
   width: 75%;
+  margin-bottom: 15px;
 }
 
 .campos input {
   background-color: #F3F0F8;
   margin-bottom: 15px;
+}
+
+.lem-esq-senha{
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
 .botoes{
@@ -62,16 +138,28 @@
 }
 
 #btn-entrar{
-  width: 35%;
+  width: 40%;
   background-color: #715AFF;
   border: solid 1px #715AFF;
   border-radius: 25px;
 }
 
 #btn-cadastrar{
-  width: 35%;
+  width: 40%;
   background-color: #fff;
   border: solid 1px #715AFF;
   border-radius: 25px;
   color: #715AFF;
+}
+
+@media only screen and (max-width: 1000px) {
+  .right-side{
+    display: none;
+  }
+  .left-side{
+    width: 100%;
+  }
+  .container-login{
+    width: 90%;
+  }
 }
