@@ -1,6 +1,6 @@
 function Home() {
   return(
-    <p>aaa</p>
+    <h1>Testing a home page</h1>
   )
 }
 
