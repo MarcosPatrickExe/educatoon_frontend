@@ -1,6 +1,19 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+
 function Home() {
   return(
-    <h1>Testing a home page</h1>
+    <React.Fragment>
+       <h1>Testing a home page</h1>
+
+        <button>
+             <Link to={"/login"}>
+                Go to Login page
+             </Link>
+        </button>
+    </React.Fragment>
+     
   )
 }
 
