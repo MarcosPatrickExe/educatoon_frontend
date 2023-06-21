@@ -1,0 +1,57 @@
+
+.footer{
+    position: absolute;
+    height: auto;
+    max-width: 100%;
+    bottom: 0px;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.wave-bg{
+    position: absolute;
+    height: auto;
+    max-width: 100%;
+    bottom: 0px;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+}
+
+.gradient-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(360deg, #715AFF 4.88%, #715AFF 17.08%, #5887FF 31.92%, #55C1FF 72.59%, #55C1FF 92.19%);
+}
+
+
+.light-point{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: -20%;
+    background-image: radial-gradient( rgb(160, 219, 219) 20%, #55C1FF 60%, rgba(105, 200, 255, 0.1));
+    z-index:2;
+}
+
+
+.cloud-left{
+    position: absolute;
+    z-index: 3;
+    width: 20vw;
+    height: auto;
+    left: -5%;
+    bottom: 12vw;
+    transform: rotateY(180deg);
+}
+
+.cloud-right{
+    position: absolute;
+    z-index: 3;
+    width: 15vw;
+    height: auto;
+    right: 5%;
+    top: 4vw;
+}

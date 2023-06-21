@@ -12,6 +12,11 @@ function Home() {
                 Go to Login page
              </Link>
         </button>
+        <button>
+             <Link to={"/category"}>
+                Go to Category page
+             </Link>
+        </button>
     </React.Fragment>
      
   )
