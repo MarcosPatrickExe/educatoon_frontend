@@ -1,8 +1,8 @@
 import './login.css';
-import personagens from "../assets/personagens-login2.png";
-import facebookIcon from "../assets/facebook-icon.svg";
-import gmailIcon from "../assets/google-icon.svg";
-import linkedinIcon from "../assets/linkedin-icon.svg";
+import personagens from "../../assets/personagens-login2.png";
+import facebookIcon from "../../assets/facebook-icon.svg";
+import gmailIcon from "../../assets/google-icon.svg";
+import linkedinIcon from "../../assets/linkedin-icon.svg";
 
 
 
@@ -14,14 +14,14 @@ function Login() {
           <div className="infos-login">
           <h1>Entrar no Educatoon</h1>
           <div className="btns-social-media">
-            <a href="" className="btn-social-media">
-              <img src={gmailIcon} alt="Entrar com Gmail" />
+            <a href="#" className="btn-social-media">
+               <img src={gmailIcon} alt="Entrar com Gmail" />
             </a>
-            <a href="" className="btn-social-media">
-            <img src={facebookIcon} alt="Entrar com Facebook" />
+            <a href="#" className="btn-social-media">
+               <img src={facebookIcon} alt="Entrar com Facebook" />
             </a>
-            <a href="" className="btn-social-media">
-            <img src={linkedinIcon} alt="Entrar com Linkedin" />
+            <a href="#" className="btn-social-media">
+               <img src={linkedinIcon} alt="Entrar com Linkedin" />
             </a>
           </div>
           <p>Ou entre com o seu e-mail</p>
@@ -35,7 +35,7 @@ function Login() {
               <input className="form-check-input" type="checkbox" id="checkboxNoLabel" value="" arial-label="..."/>
               <p>Lembrar Senha</p>
             </div>
-            <a href="">Esqueci minha senha</a>
+            <a href="#">Esqueci minha senha</a>
           </div>
           <div className="botoes">
             <button type="button" className="btn btn-primary" id="btn-entrar">Entrar</button>
