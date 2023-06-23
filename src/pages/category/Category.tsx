@@ -37,17 +37,28 @@ export default function Category(){
            </div>
 
 
-            <img className="cloud-left" src={cloud} alt="cloud" />
+           <div className="box-previous-next-btns">
+                <div className="col-md-3  col-lg-4  h-50  previous-btn text-center" style={{backgroundColor: Colors.BLUE_PURPLE }}>
+                    <i className="4 fa fa-caret-left"></i>
+                </div>
 
-            <img className="cloud-right" src={cloud} alt="cloud" />
+                <div className="col-md-2  col-lg-1 vh-100 next-btn text-center" style={{backgroundColor: Colors.BLUE_PURPLE }}> 
+                    <i className="fa fa-caret-right"></i>
+                </div>
+           </div>
 
-            <div className="light-point"></div>
 
-            <div className="gradient-bg"></div>
+           <img className="cloud-left" src={cloud} alt="cloud" />
 
-            <img className="footer" src={groundGrass} alt="grass" />
+           <img className="cloud-right" src={cloud} alt="cloud" />
+
+           <div className="light-point"></div>
+
+           <div className="gradient-bg"></div>
+
+           <img className="footer" src={groundGrass} alt="grass" />
             
-            <img className="wave-bg" src={wave} alt="wave background" />
+           <img className="wave-bg" src={wave} alt="wave background" />
         </>
     );
 }
@@ -55,4 +66,4 @@ export default function Category(){
 
 // git pull origin other-branch
 
-// git push origin localBranchName:remoteBranchName
+// git push origin master:category_page
