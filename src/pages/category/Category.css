@@ -46,6 +46,10 @@
     left: -5%;
     bottom: 12vw;
     transform: rotateY(180deg);
+    animation: left-cloud-movimation 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
 
 .cloud-right{
@@ -55,7 +59,22 @@
     height: auto;
     right: 5%;
     top: 15vw;
+    animation: right-cloud-movimation 11s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
+
+@keyframes right-cloud-movimation {
+    from { right: 10%; }
+    to{ right: 0%; }
+}
+
+@keyframes left-cloud-movimation {
+    from { left: 6%; }
+    to{ left: -5%; }
+}
+
 
 .title-logo{
     position: absolute;
@@ -294,14 +313,6 @@
 
 
 /*
-@media (max-width: 768px) {
-  .btn-responsive {
-    padding:2px 4px;
-    font-size:80%;
-    line-height: 1;
-  }
-}
-
 @media (min-width: 769px) and (max-width: 992px) {
   .btn-responsive {
     padding:4px 9px;
@@ -309,6 +320,4 @@
     line-height: 1.2;
   }
 }
-
-
 */
