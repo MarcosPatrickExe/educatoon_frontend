@@ -24,15 +24,15 @@ export default function Category(){
             </div>
            
 
-           <div className="box-top-center-text">
-                <div className="div-top-center-text" >
-                    <p> 
+           <div className="box-column-text-center">
+                <div className="div-top-center-text  col-4 col-sm-3 col-md-3 col-lg-3 col-xl-2  p-1  p-sm-2  p-md-2 p-lg-2" >
+                    <p id="escolha-sua-jornada"> 
                         <span style={{color: '#F3B700'}}>Escolha</span> sua jornada
                     </p>
                 </div>
 
-                <div className="div-bottom-center-text" style={{backgroundColor: Colors.YELLOW }}>
-                    <p> Iniciar </p>
+                <div className="div-bottom-center-text  col-4 col-sm-4 col-md-3 col-lg-2  p-1  p-sm-1" style={{backgroundColor: Colors.YELLOW }}>
+                    <p id="iniciar"> Iniciar </p>
                 </div>
            </div>
 

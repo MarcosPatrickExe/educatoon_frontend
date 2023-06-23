@@ -24,7 +24,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(360deg, #715AFF 4.88%, #715AFF 17.08%, #5887FF 31.92%, #55C1FF 72.59%, #55C1FF 92.19%);
+    background-image: linear-gradient(360deg, #5887FF 21.92%, #55C1FF 72.59%, #55C1FF 92.19%);
 }
 
 
@@ -114,7 +114,7 @@
 }
 
 
-.box-top-center-text{
+.box-column-text-center{
     z-index: 7;
     width: 100%;
     height: 100%;
@@ -128,41 +128,37 @@
 }
 
 .div-top-center-text{
+    position: relative;
     border-radius: 200px;
-    width: 18vw;
-    height: 3.5vw;
-    padding-top: 1.5vw;
+    background-color: #4AA4D9;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #4AA4D9;
-}
-
-.div-top-center-text p{
-    color: white;
-    font-family: 'Baloo 2';
-    font-weight: bold;
-    font-size: 1.5vw;
 }
 
 .div-bottom-center-text{
+    position: relative;
     border-radius: 200px;
-    width: 17vw;
-    height: 3.5vw;
-    padding-top: 1.5vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.div-bottom-center-text p{
+
+#escolha-sua-jornada{
     color: white;
     font-family: 'Baloo 2';
     font-weight: bold;
-    font-size: 2.5vw;
+    margin: 0;
+}
+#iniciar{
+    color: white;
+    font-family: 'Baloo 2';
+    font-weight: bold;
+    margin: 0;
 }
 
 
@@ -202,6 +198,15 @@
         justify-content: center;
         border-radius: 50%;
     }
+    #escolha-sua-jornada{
+        font-size: 14px;
+    }
+    #iniciar{
+        font-size: 20px;
+    }
+    .box-column-text-center{
+        padding-bottom: 6.5%;
+    }
 }
 @media (min-width: 768px) {
     .previous-btn {
@@ -226,6 +231,12 @@
         justify-content: center;
         border-radius: 50%;
     }
+    #escolha-sua-jornada{
+        font-size: 18px;
+    }
+    #iniciar{
+        font-size: 25px;
+    }
 }
 @media (min-width: 992px) {
     .previous-btn {
@@ -247,6 +258,12 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
+    }
+    #escolha-sua-jornada{
+        font-size: 18px;
+    }
+    #iniciar{
+        font-size: 30px;
     }
 }
 @media (min-width: 1200px) {
