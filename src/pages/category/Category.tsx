@@ -38,12 +38,12 @@ export default function Category(){
 
 
            <div className="box-previous-next-btns">
-                <div className="col-md-3  col-lg-4  h-50  previous-btn text-center" style={{backgroundColor: Colors.BLUE_PURPLE }}>
-                    <i className="4 fa fa-caret-left"></i>
+                <div className="previous-btn text-center" style={{backgroundColor: Colors.BLUE_PURPLE }}>
+                    <i className="fa fa-caret-left" style={{color: 'white'}} ></i>
                 </div>
 
-                <div className="col-md-2  col-lg-1 vh-100 next-btn text-center" style={{backgroundColor: Colors.BLUE_PURPLE }}> 
-                    <i className="fa fa-caret-right"></i>
+                <div className="next-btn text-center" style={{backgroundColor: Colors.BLUE_PURPLE }}> 
+                    <i className="fa fa-caret-right" style={{color: 'white'}} ></i>
                 </div>
            </div>
 
