@@ -108,6 +108,8 @@
 
 .search-div{
     display: flex;
+    background-color: white;
+    border-radius: 200px;
 }
 .search-input{
     border-radius: 200px;
@@ -116,7 +118,6 @@
 }
 
 .find-icon{
-    position: absolute;
     z-index: 6;
     padding: 1.1vw;
     border-radius: 50px;

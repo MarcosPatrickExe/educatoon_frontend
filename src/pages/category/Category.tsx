@@ -22,7 +22,7 @@ export default function Category(){
                                 <i className="fa fa-search"></i>
                             </button>
                         </div>
-                        <button className="nav-item setting-icon" type="submit">
+                        <button className="nav-item setting-icon" type="button">
                             <i className="fa fa-cog"></i>
                         </button>
                     </div>
