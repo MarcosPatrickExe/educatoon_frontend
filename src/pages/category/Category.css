@@ -114,13 +114,13 @@
 .search-input{
     border-radius: 200px;
     border: none;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: -4px 6px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .find-icon{
-    z-index: 6;
+    z-index: 26;
     padding: 1.1vw;
-    border-radius: 50px;
+    border-radius: 200px;
     background: #FFF;
     border: none;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);

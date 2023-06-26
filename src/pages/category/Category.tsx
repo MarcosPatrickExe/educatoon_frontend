@@ -3,10 +3,26 @@ import wave from '../../assets/wave.svg';
 import './Category.css';
 import cloud from '../../assets/cloud.png';
 import Colors from '../../components/Utils';
+import { useState } from 'react';
 
 
 
 export default function Category(){
+
+    const [showInputSearch, setInputSearchVisibilityy ] = useState(false);
+    const [showButtonConfig, setButtonConfigVisibility ] = useState(false);
+
+
+    const handleMouseOnSearch = () => {
+        console.log("mouse on");
+        setInputSearchVisibilityy(true);
+    }
+    const handleMouseOutSearch = () => {
+        console.log("mouse out");
+        setInputSearchVisibilityy(false);
+    }
+
+
 
     return (
         <>
@@ -17,12 +33,16 @@ export default function Category(){
 
                     <div className="nav-btns">
                         <div className="nav-item search-div">
-                            <input className="search-input" type="text" placeholder="Search" aria-label="Search" />
-                            <button className="find-icon" type="button">
+                            {
+                                showInputSearch && ( 
+                                    <input className="search-input" type="text" placeholder="Search" aria-label="Search" />
+                                ) 
+                            }
+                            <div className="find-icon" onClick={handleMouseOnSearch}  onMouseOut={handleMouseOutSearch}>
                                 <i className="fa fa-search"></i>
-                            </button>
+                            </div>
                         </div>
-                        <button className="nav-item setting-icon" type="button">
+                        <button className="nav-item setting-icon" onMouseOver={ handleMouseOnSearch }  onMouseOut={ handleMouseOutSearch } type="button">
                             <i className="fa fa-cog"></i>
                         </button>
                     </div>
