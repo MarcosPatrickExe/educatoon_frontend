@@ -2,13 +2,21 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './home.css';
 import personagensCaindo from "../../assets/home/Personagens-caindo.svg";
-import persPlaceHolder from "../../assets/home/pers-ph.svg"
+import persPlaceHolder from "../../assets/home/pers-ph.svg";
+import mattImg from "../../assets/home/matt-img.svg";
+import pamImg from "../../assets/home/pam-img2.svg";
+import matofobicoImg from "../../assets/home/matofobico-img.svg";
+import susieImg from "../../assets/home/susie-img.svg";
+import VanessinhaImg from "../../assets/home/vanessinha-img.svg";
+import patrickImg from "../../assets/home/patrick-img.svg";
 import graduationHat from "../../assets/home/graduation-hat.svg";
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer'
 function Home() {
   return(
     <React.Fragment>
+      <div className="home">
+
        <div className="secao-primeira">
         <div className="container">
           <Navbar/>
@@ -59,7 +67,7 @@ function Home() {
             <div className="container-personagem">
                
                 <div className="pers-img">
-                  <img src={persPlaceHolder} alt="" />
+                  <img src={mattImg} alt="" />
                 </div>
                 <div className="pers-nome">
                 <p>Matt</p>
@@ -75,7 +83,7 @@ function Home() {
                 <button type="button" className="conheca-me">Me conheça</button>
                 </div>
                 <div className="pers-img">
-                  <img src={persPlaceHolder} alt="" />
+                  <img src={pamImg} alt="" />
                 </div>
               </div>
             </div>
@@ -85,7 +93,7 @@ function Home() {
             <div className="container-personagem">
                
                 <div className="pers-img">
-                  <img src={persPlaceHolder} alt="" />
+                  <img src={susieImg} alt="" />
                 </div>
                 <div className="pers-nome">
                 <p>Susie</p>
@@ -101,7 +109,7 @@ function Home() {
                 <button type="button" className="conheca-me">Me conheça</button>
                 </div>
                 <div className="pers-img">
-                  <img src={persPlaceHolder} alt="" />
+                  <img src={VanessinhaImg} alt="" />
                 </div>
               </div>
             </div>
@@ -115,7 +123,7 @@ function Home() {
                 <button type="button" className="conheca-me">Me conheça</button>
                 </div>
                 <div className="pers-img">
-                  <img src={persPlaceHolder} alt="" />
+                  <img src={patrickImg} alt="" />
                 </div>
               </div>
             </div>
@@ -123,7 +131,7 @@ function Home() {
             <div className="container-personagem">
               
                 <div className="pers-img">
-                  <img src={persPlaceHolder} alt="" />
+                  <img src={matofobicoImg} alt="" />
                 </div>
                 <div className="pers-nome">
                 <p>Matofóbico</p>
@@ -133,6 +141,7 @@ function Home() {
             </div>
           </div>
         </div>
+        <div className="wav-rodape">
         <div className="secao-planos container">
           <h2>Nossos Planos</h2>
           <div className="cards-planos">
@@ -198,9 +207,11 @@ function Home() {
           </div>
           </div>
         </div>
+        </div>
         <div className="secao-roda-pe">
             <Footer></Footer>
         </div>
+      </div>
     </React.Fragment>
      
   )

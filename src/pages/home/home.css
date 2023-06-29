@@ -1,3 +1,7 @@
+.home {
+  background: linear-gradient(170.92deg, #FFFFFF 14.52%, #F6F4FF 79.46%);
+}
+
 .secao-primeira{
   height: 160vh;
   width: 100%;
@@ -28,9 +32,15 @@ p{
   font-size: 19px;
   font-weight: 600;
   background-color: #F3B700;
-  color: #715AFF;
+  color: #1E1650;
   border-radius: 25px;
   border-width: 0px;
+  transition: all ease 300ms;
+}
+.secao-primeira button:hover{
+
+  background-color: #FFF;
+  color: #715AFF;
 }
 .secao-sobre-nos{
   display: flex;
@@ -44,8 +54,13 @@ p{
   color: #715AFF;
   border-radius: 25px;
   border-width: 0px;
+  transition: all ease 300ms;
 }
 
+.secao-sobre-nos button:hover{
+  background-color:#715AFF;
+  color: #FFF;
+}
 .sobre-nos-right{
   width: 50%;
   /* height: 20vh; */
@@ -145,6 +160,7 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 0px;
   /* background-color: black; */
 }
 .container-personagem{
@@ -163,11 +179,13 @@ p{
 .pers-img{
   display: flex;
   align-items: flex-end;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
   /* background-color: #F3B700; */
 }
 .pers-img img{
-  width: 92%;
-  height: 92%;
+  width: 100%;
+  height: 100%;
 }
 .pers-nome{
   /* background-color: #7A7A7A; */
@@ -204,6 +222,11 @@ p{
 .matt button {
   background-color: #F3B700;
   color: #577CFE;
+}
+
+.matt button:hover, .pam button:hover, .susie button:hover, .vanessinha button:hover, .patrick button:hover, .matofobico button:hover{
+  background-color:#715AFF;
+  color: #FFF;
 }
 .pam button{
   background-color: #577CFE;
@@ -266,7 +289,6 @@ p{
   align-items: center;
   width: 100%;
   height: 130vh;
-  /* background-color: #4DD85B; */
 }
 
 .cards-planos{
@@ -332,6 +354,7 @@ p{
   font-weight: 600;
 }
 
+
 .descricao{
   height: 66%;
   width: 100%;
@@ -359,8 +382,12 @@ p{
   color: #715AFF;
   border-radius: 25px;
   border-width: 0px;
+  transition: all ease 300ms;
 }
-
+.button-assinar button:hover {
+  background-color:#715AFF;
+  color: #FFF;
+}
 .descer {
   margin-top: 150px;
 }
@@ -372,9 +399,15 @@ p{
   font-weight: 700;
   margin-bottom: 25px;
 }
+.wav-rodape{
+  background-image: url('../../assets/home/wave-rodape.svg') ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
 
 .secao-roda-pe{
   width: 100%;
   height: 50vh;
-  /* background-color: #4DD85B; */
+  background-color: #F0EBFB;
 }
