@@ -27,11 +27,11 @@ export default function Category(){
                 <div className="navbar-header">
                     <a className="navbar-brand title-logo" href="###" >Educatoon</a>
 
-                    <div className="nav-btns" >
+                    <div className="nav-btns">
                         <div className="nav-item search-div" onMouseOver={ handleMouseOnSearch}  onMouseOut={ handleMouseOutSearch}>
                             {
                                 showInputSearch && (
-                                    <input className="form-control search-input" type="text" placeholder="Search" aria-label="Search" />
+                                    <input className="search-input" type="text" placeholder="Search" aria-label="Search" />
                                 )
                             }
                             <div className="find-icon">
@@ -39,12 +39,19 @@ export default function Category(){
                             </div>
                         </div>
 
-                       
-                        <div className="setting-icon" >
-                            <i className="fa fa-cog"></i>
+                        <div className="nav-item config-div" onMouseOver={ ()=>setButtonConfigVisibility(true) }  onMouseOut={ ()=>setButtonConfigVisibility(false) }>
+                            
+                            { showButtonConfig && (
+                                <div className="configuracoes-div">
+                                     <span> Configurações </span>
+                                </div>
+                              )
+                            }
+                            <div className="setting-icon" >
+                                <i className="fa fa-cog"></i>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
             </nav>
 
