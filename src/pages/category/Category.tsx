@@ -55,20 +55,6 @@ export default function Category(){
                 </div>
             </nav>
 
-{/* 
-            <h3 className="title-logo">Educatoon</h3>
-
-            <div className="box-icons">
-                <div className="find-icon">
-                    <i className="fa fa-search"></i>
-                    <img src={ require("../../assets/search-icon.png")} alt="search icon"></img>
-                </div>
-                <div className="setting-icon">
-                    <i className="fa fa-cog"></i>
-                    <img src={ require("../../assets/setting-icon.png")} alt="setting icon"></img> 
-                </div>
-            </div>
-    */}
 
             <div className="box-column-text-center">
                     <div className="div-top-center-text  col-4 col-sm-3 col-md-3 col-lg-3 col-xl-2  p-1  p-sm-2  p-md-2 p-lg-2" >
@@ -109,7 +95,6 @@ export default function Category(){
     );
 }
 
-
+// COMANDOS PARA FAZER O PULL E O PUSH DE UMA BRANCH ESPECIFICA: 
 // git pull origin other-branch
-
 // git push origin master:category_page
