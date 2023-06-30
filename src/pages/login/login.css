@@ -136,6 +136,11 @@
   font-weight: 900;
 }
 
+#entrar{
+  color: white;
+  text-decoration: none;
+}
+
 #btn-entrar{
   width: 40%;
   background-color: #715AFF;

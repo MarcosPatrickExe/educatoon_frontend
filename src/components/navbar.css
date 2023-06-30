@@ -2,8 +2,7 @@
   height: 15vh;
   display: flex;
   align-items: center;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   color: #fff;
   margin-bottom: 25px;
   font-family: 'Poppins', sans-serif;
