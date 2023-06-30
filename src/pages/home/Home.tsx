@@ -17,6 +17,7 @@ function Home() {
     <React.Fragment>
       <div className="home">
 
+
        <div className="secao-primeira">
         <div className="container">
           <Navbar/>
@@ -212,6 +213,7 @@ function Home() {
             <Footer></Footer>
         </div>
       </div>
+
     </React.Fragment>
      
   )

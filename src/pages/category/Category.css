@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap');
+
+:root{
+    --light-purple: #715AFF;
+}
+
+.footer{
+    position: absolute;
+    height: auto;
+    max-width: 100%;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.wave-bg{
+    position: absolute;
+    height: auto;
+    max-width: 100%;
+    bottom: 0px;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+}
+
+.gradient-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(360deg, #5887FF 21.92%, #55C1FF 72.59%, #55C1FF 92.19%);
+}
+
+
+.light-point{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: -20%;
+    background-image: radial-gradient( rgb(160, 219, 219) 20%, #55C1FF 60%, rgba(105, 200, 255, 0.1));
+    z-index:2;
+}
+
+
+.cloud-left{
+    position: absolute;
+    z-index: 3;
+    width: 20vw;
+    height: auto;
+    left: -5%;
+    bottom: 12vw;
+    transform: rotateY(180deg);
+    animation: left-cloud-movimation 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.cloud-right{
+    position: absolute;
+    z-index: 3;
+    width: 15vw;
+    height: auto;
+    right: 5%;
+    top: 15vw;
+    animation: right-cloud-movimation 11s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes right-cloud-movimation {
+    from { right: 10%; }
+    to{ right: 0%; }
+}
+
+@keyframes left-cloud-movimation {
+    from { left: 6%; }
+    to{ left: -5%; }
+}
+
+/*======================>  NAV BAR  <==================== */
+.title-logo{
+    color: #7A64FF;
+    z-index: 4;
+    margin-top: 1%;
+    font-size: 3vw;
+    font-family: 'Baloo 2', Verdana;
+    font-weight: bold;
+}
+
+.box-icons{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 15%;
+}
+.navbar-header{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    min-width: 10%; 
+    height: 4vw;
+}
+.search-div{
+    position: relative;
+    display: flex;
+    border-radius: 200px;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -2px 4px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.search-input{
+    width: 17vw;
+    padding-left: 20px;
+    border-radius: 200px;
+    border: none;/*
+    box-sizing: border-box;
+    border: 2px solid yellow; */
+    font-size: 1.5vw;
+    font-family: 'Baloo 2', Verdana;
+}
+.search-input:focus{
+    outline: none;
+}
+
+.find-icon{ /*  child of '.search-div'    */
+    position: relative;
+  /*  right: 0;  propriedade para o absolute  */
+    z-index: 26;
+    display: flex;
+    align-items: center;
+    padding: 1.1vw;
+    border-radius: 50%;
+    background: #FFF;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+.config-div{
+    margin-left: 10%;
+    position: relative;
+    padding: 0;
+    display: flex;
+    border-radius: 200px;
+    background-color: white;
+    box-shadow: -2px 4px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.configuracoes-div{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 200px;
+    font-weight: bold;
+    padding: 0 0;
+    display: flex;
+    align-items: center;
+}
+.configuracoes-div span{
+    position: relative;
+    color: var(--light-purple);
+    font-size: 1.5vw;
+    margin: 0 7px 0 17px;
+    font-family: 'Baloo 2', Verdana;
+}
+.setting-icon{
+    position: relative;
+    z-index: 26;
+    display: flex;
+    align-items: center;
+    padding: 1.1vw;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.fa-search{
+    font-size: 2.1vw;
+    color: gray;
+}
+.fa-cog{
+    font-size: 2.1vw;
+    color: gray;
+}
+/*=================================================== */
+
+
+
+
+
+.box-column-text-center{
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    padding-top: 7%;
+    padding-bottom: 4.1%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div-top-center-text{
+    position: relative;
+    border-radius: 200px;
+    background-color: #4AA4D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-bottom-center-text{
+    position: relative;
+    border-radius: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+#escolha-sua-jornada{
+    color: white;
+    font-family: 'Baloo 2';
+    font-weight: bold;
+    margin: 0;
+}
+#iniciar{
+    color: white;
+    font-family: 'Baloo 2';
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.box-previous-next-btns{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding-top: 37vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 768px) {
+    .previous-btn {
+        min-height: 50px;
+        width: 50px;
+        font-size: 25px;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .next-btn{
+        min-height: 50px;
+        width: 50px;
+        font-size: 25px;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    #escolha-sua-jornada{
+        font-size: 14px;
+    }
+    #iniciar{
+        font-size: 20px;
+    }
+    .box-column-text-center{
+        padding-top: 20%;
+        padding-bottom: 6.5%;
+    }
+}
+@media (min-width: 768px) {
+    .previous-btn {
+        min-height: 60px;
+        width: 60px;
+        font-size: 30px;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .next-btn{
+        min-height: 60px;
+        width: 60px;
+        font-size: 30px;
+        margin-right: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    #escolha-sua-jornada{
+        font-size: 18px;
+    }
+    #iniciar{
+        font-size: 25px;
+    }
+    .box-column-text-center{
+        padding-top: 12%;
+    }
+}
+@media (min-width: 992px) {
+    .previous-btn {
+        min-height: 70px;
+        width: 70px;
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .next-btn{
+        min-height: 70px;
+        width: 70px;
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    #escolha-sua-jornada{
+        font-size: 18px;
+    }
+    #iniciar{
+        font-size: 30px;
+    }
+}
+@media (min-width: 1200px) {
+    .previous-btn {
+        min-height: 70px;
+        width: 70px;
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .next-btn{
+        min-height: 70px;
+        width: 70px;
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+}
+
+
+
+
+
+/*
+@media (min-width: 769px) and (max-width: 992px) {
+  .btn-responsive {
+    padding:4px 9px;
+    font-size:90%;
+    line-height: 1.2;
+  }
+}
+*/
