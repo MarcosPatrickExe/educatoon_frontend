@@ -1,0 +1,21 @@
+.rodapebox{
+display: flex;
+justify-content: space-between;
+/* align-items: center; */
+}
+
+.rodapebox p{
+  font-family: 'Poppins', sans-serif;
+  color: #949494;
+  font-size: 18px;
+}
+.titulo{
+  color: #715AFF !important;
+  font-weight: 600;
+}
+.rodapebox h2{
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  color: #715AFF !important;
+  font-size: 40px;
+}
