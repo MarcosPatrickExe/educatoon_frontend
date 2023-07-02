@@ -151,6 +151,10 @@
   color: #715AFF;
 }
 
+#btn-cadastrar a {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 1000px) {
   .right-side{
     display: none;

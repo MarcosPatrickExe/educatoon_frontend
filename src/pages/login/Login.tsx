@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './login.css';
 import personagens from "../../assets/personagens-login2.png";
 import facebookIcon from "../../assets/facebook-icon.svg";
@@ -39,7 +41,9 @@ function Login() {
           </div>
           <div className="botoes">
             <button type="button" className="btn btn-primary" id="btn-entrar">Entrar</button>
-            <button type="button" className="btn btn-primary" id="btn-cadastrar">Criar Conta</button>
+            <button type="button" className="btn btn-primary" id="btn-cadastrar"><Link to={"/cadastrosemcargo"}>
+            Criar Conta
+             </Link></button> 
           </div>
         </div>
         <div className="right-side">

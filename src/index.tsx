@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Home from './pages/home/Home';
 //import reportWebVitals from './reportWebVitals';
 import Login from "./pages/login/Login";
+import CadastroSemCargo from './pages/Cadastro/cadastro-sem-cargo/CadastroSemCargo';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,6 +19,10 @@ const browserRouter = createBrowserRouter(
       {
         path: "/login",
         element: <Login />
+      },
+      {
+        path: "/cadastrosemcargo",
+        element: <CadastroSemCargo />
       }
     ]
 );
