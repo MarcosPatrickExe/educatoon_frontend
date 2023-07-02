@@ -1,0 +1,43 @@
+.select-user-bg{
+  background-image: url('../../assets/select-user-bg.svg'); 
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-align: center;
+}
+
+.select-user-bg h2{
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.users{
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  justify-content: space-between;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.user{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user a {
+  text-decoration: none;
+  color:#fff;
+}
+
+.user img{
+  width: 80%;
+  margin-bottom: 15px;
+}

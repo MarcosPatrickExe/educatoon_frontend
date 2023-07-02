@@ -10,7 +10,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Category from './pages/category/Category';
 import CadastroGuardiao from './pages/Cadastro/cadastro-guardiao-professor/CadastroGuardiao';
 import CadastroEscola from './pages/Cadastro/cadastro-escola/CadastroEscola';
-
+import SelectUser from './pages/selectUser/SelectUser';
 
 // URLs DE CADA PAGINA:
 const browserRouter = createBrowserRouter(
@@ -34,6 +34,10 @@ const browserRouter = createBrowserRouter(
       {
         path: "/cadastroescola",
         element: <CadastroEscola />
+      },
+      {
+        path: "/selectuser",
+        element: <SelectUser />
       }
     ]
 );

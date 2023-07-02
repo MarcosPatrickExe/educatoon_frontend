@@ -5,7 +5,7 @@ import { Login } from "./pages/Login";
 import { CadastroSemCargo } from "./pages/Cadastro/cadastro-sem-cargo/CadastroSemCargo";
 import { CadastroGuardiao } from "./pages/Cadastro/cadastro-guardiao-professor";
 import { CadastroEscola } from "./pages/Cadastro/cadastro-escola";
- 
+import { SelectUser } from "./pages/selectUser/SelectUser";
 
 export const Content = () => {
   return (
@@ -15,6 +15,7 @@ export const Content = () => {
       <Route exact path='/cadastrosemcargo' component={CadastroSemCargo} />
       <Route exact path='/cadastroguardiao' component={CadastroGuardiao} />
       <Route exact path='/cadastroescola' component={CadastroEscola} />
+      <Route exact path='/selectuser' component={SelectUser} />
     </Switch>
   )
 }
