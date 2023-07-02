@@ -8,7 +8,8 @@ import Login from "./pages/login/Login";
 import CadastroSemCargo from './pages/Cadastro/cadastro-sem-cargo/CadastroSemCargo';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Category from './pages/category/Category';
-
+import CadastroGuardiao from './pages/Cadastro/cadastro-guardiao-professor/CadastroGuardiao';
+import CadastroEscola from './pages/Cadastro/cadastro-escola/CadastroEscola';
 
 
 // URLs DE CADA PAGINA:
@@ -25,6 +26,14 @@ const browserRouter = createBrowserRouter(
       {
         path: "/cadastrosemcargo",
         element: <CadastroSemCargo />
+      },
+      {
+        path: "/cadastroguardiao",
+        element: <CadastroGuardiao />
+      },
+      {
+        path: "/cadastroescola",
+        element: <CadastroEscola />
       }
     ]
 );

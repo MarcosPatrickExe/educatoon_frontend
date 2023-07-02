@@ -3,8 +3,9 @@ import { Switch, Route } from 'react-router-dom';
 import { Home } from "./pages/home/Home";
 import { Login } from "./pages/Login";
 import { CadastroSemCargo } from "./pages/Cadastro/cadastro-sem-cargo/CadastroSemCargo";
-
-
+import { CadastroGuardiao } from "./pages/Cadastro/cadastro-guardiao-professor";
+import { CadastroEscola } from "./pages/Cadastro/cadastro-escola";
+ 
 
 export const Content = () => {
   return (
@@ -12,6 +13,8 @@ export const Content = () => {
       <Route exact path='/' component={Home} />
       <Route exact path='/Login' component={Login} />
       <Route exact path='/cadastrosemcargo' component={CadastroSemCargo} />
+      <Route exact path='/cadastroguardiao' component={CadastroGuardiao} />
+      <Route exact path='/cadastroescola' component={CadastroEscola} />
     </Switch>
   )
 }
