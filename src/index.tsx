@@ -11,8 +11,9 @@ import Category from './pages/category/Category';
 import CadastroGuardiao from './pages/Cadastro/cadastro-guardiao-professor/CadastroGuardiao';
 import CadastroEscola from './pages/Cadastro/cadastro-escola/CadastroEscola';
 import SelectUser from './pages/selectUser/SelectUser';
-
+import SelectHq from './pages/selectHq/SelectHq';
 // URLs DE CADA PAGINA:
+
 const browserRouter = createBrowserRouter(
     [
       { 
@@ -38,6 +39,10 @@ const browserRouter = createBrowserRouter(
       {
         path: "/selectuser",
         element: <SelectUser />
+      },
+      {
+        path: "/selecthq",
+        element: <SelectHq />
       }
     ]
 );
