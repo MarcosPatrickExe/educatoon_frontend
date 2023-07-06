@@ -1,5 +1,133 @@
+.select-hq-bg{
+  background-image: url('../../assets/select-hq/select-hq-bg.svg'); 
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+.select-corpo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
 .header-and-btns{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+}
+
+.header-and-btns button{
+  background-color: #F3B700;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.header-and-btns button img{
+  width: 80%;
+  width: 80%;
+}
+
+.header-and-btns h2{
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  font-size: 38px;
+  color: #715AFF;
+  margin-bottom: 0px;
+  margin-left: 10px;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-select-hqs{
+  font-family: 'Baloo 2', cursive;
+  font-weight: 600;
+  font-size: 26px;
+  color: #6752EB;
+  background-color: #ece8ff;
+  padding: 5px 25px;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+.filtros{
+  width: 87%;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.filtros a {
+  /* padding: 5px 15px; */
+  width: 18%;
+  text-align: center;
+  border: solid 1px #6752EB;
+  border-radius: 25px;
+  color: #6752EB;
+}
+
+.secao-hqs{
+  /* height: 90vh; */
+  width: 87%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.hqs-row{
+  width: 100%;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.one-hq{
+  padding-bottom: 6px;
+  /* width: 100%; */
+  background-color: #fff;
+  /* border: solid 3px #6752EB; */
+  /* width: 23%; */
+  border-radius: 25px 54px 50px 25px;
+}
+
+.one-hq img{
+  /* width: 100%; */
+}
+
+.paginacao{
+  margin-bottom: 30px;
+}
+
+.pagination a{
+  color: #645C92;
+}
+
+.sem-bg{
+  background: none !important;
+}
+
+.pagina-atual{
+  background-color: #bfb5fe !important;
+  color: #fff !important;
+}
+
+.page-item a{
+  padding: 7px 18px !important;
+  /* width: 40px; */
+  /* height: 40px; */
+  text-align: center;
+  font-size: 19px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  border-radius: 100px !important;
 }
