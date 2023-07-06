@@ -7,28 +7,44 @@ import Category from '../category/Category';
 
 function SelectHq() {
   return (
-    <div className="select-user-bg">
-    <h2>Quem está prestes a entrar <br/> nessa jornada conosco?</h2>
-    <div className="users">
-      <div className="user">
-      <Link to={"/cadastroSemCargo"}>
-        <img src={avatar} alt="" />
-        <p>Sou aluno(a)!</p>
-      </Link>
+    <div className="select-hq-bg">
+      <div className="header-and-btns">
+        <div>
+          <a href=""></a>
+          <h2>Educatoon</h2>
+        </div>
+        <div>
+          <a href=""></a>
+          <a href=""></a>
+        </div>
       </div>
-      <div className="user">
-        <Link to={"/cadastroescola"}>
-          <img src={avatar} alt="" />
-          <p>Sou escola!</p>          
-        </Link>
+      <p className="titulo-select-hqs">Explore os quadrinhos</p>
+      <div className="tag">
+        <a href="">Fáceis</a>
+        <a href="">Desafiadores</a>
+        <a href="">Engraçados</a>
+        <a href="">Temáticos</a>
+        <a href="">Turminha</a>
       </div>
-      <div className="user">
-        <Link to={"/cadastroguardiao"}>
-           <img src={avatar} alt="" />
-          <p>Sou pai ou responsável!</p>
-        </Link>
+      <div className="all">
+        <div className="hqs-row">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div className="hqs-row">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
-    </div>
+      <div className="paginacao">
+        
+      </div>
     </div>
     
   )
