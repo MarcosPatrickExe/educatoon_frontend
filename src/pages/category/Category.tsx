@@ -43,7 +43,7 @@ export default function Category(){
     return (
         <div>
 {/*---------------------NAVBAR COM ICONES DE PESQUISA E DE CONFIGURACAO --------------------------*/}
-            <NavBar></NavBar>
+            <NavBar setYellowColorButtons={false}></NavBar>
 {/*------------------------------------------------------------------------------============-----*/}
 
 
