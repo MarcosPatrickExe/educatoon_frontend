@@ -10,7 +10,7 @@ import susieImg from "../../assets/home/susie-img.svg";
 import VanessinhaImg from "../../assets/home/vanessinha-img.svg";
 import patrickImg from "../../assets/home/patrick-img.svg";
 import graduationHat from "../../assets/home/graduation-hat.svg";
-import Navbar from '../../components/Navbar';
+import NavbarHome from '../../components/NavbarHome';
 import Footer from '../../components/Footer'
 
 
@@ -24,7 +24,7 @@ function Home() {
 
         <div className="secao-primeira">
             <div className="container">
-              <Navbar/>
+              <NavbarHome/>
               <h1>Junte-se a <br/> aventura!</h1>
               <p>Transforme a <b>aprendizagem</b> <br/> em <b>diversão</b> com o Educatoon!</p>
               <button type="button">Ser um parceiro</button>

@@ -4,20 +4,17 @@ import './Category.css';
 import cloud from '../../assets/cloud.png';
 import Colors from '../../components/Utils';
 import react, { useState } from 'react';
-
 import pam from '../../assets/pam-planeta.png';
 import matofobico from '../../assets/matofobico-planeta.png';
 import pat from '../../assets/patrick-planeta.png';
 import matt from '../../assets/matt-planeta.png';
 import susie from '../../assets/susie-planeta.png';
-
+import NavBar from '../../components/NavBar';
 
 
 
 export default function Category(){
 
-    const [ showInputSearch, setInputSearchVisibilityy ] = useState<boolean>(false);
-    const [ showButtonConfig, setButtonConfigVisibility ] = useState<boolean>(false);
     const [ arrayImages, changeImagesSequence ] = useState( [pat, susie, matt, pam, matofobico] );
 
 
@@ -46,37 +43,7 @@ export default function Category(){
     return (
         <div>
 {/*---------------------NAVBAR COM ICONES DE PESQUISA E DE CONFIGURACAO --------------------------*/}
-            <nav className="navbar navbar-light  box-icons">
-                <div className="navbar-header">
-                    <a className="navbar-brand title-logo" href="###" >Educatoon</a>
-
-                    <div className="nav-btns">
-                        <div className="nav-item search-div" onMouseOver={ ()=>setInputSearchVisibilityy(true) }  onMouseOut={ ()=>setInputSearchVisibilityy(false) }>
-                            {
-                                showInputSearch && (
-                                    <input className="search-input" type="text" placeholder="Search" aria-label="Search" />
-                                )
-                            }
-                            <div className="find-icon">
-                                <i className="fa fa-search"></i>
-                            </div>
-                        </div>
-
-                        <div className="nav-item config-div" onMouseOver={ ()=>setButtonConfigVisibility(true) }  onMouseOut={ ()=>setButtonConfigVisibility(false) }>
-                            
-                            { showButtonConfig && (
-                                <div className="configuracoes-div">
-                                     <span> Configurações </span>
-                                </div>
-                              )
-                            }
-                            <div className="setting-icon" >
-                                <i className="fa fa-cog"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+            <NavBar></NavBar>
 {/*------------------------------------------------------------------------------============-----*/}
 
 

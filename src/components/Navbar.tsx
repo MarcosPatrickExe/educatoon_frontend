@@ -1,28 +1,45 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './navbar.css';
+import {useState} from 'react';
+import './NavBar.css';
 
-function Navbar() {
 
-  return(
-    <React.Fragment>
-      <div className="navbar">
-        <div className="logo">
-             <h3>Educatoon</h3>
-        </div>
-        <div className="links">
-          <ul id="links-navbar">
-              <li>Sobre nós</li>
-              <li>Diferencial</li>
-              <li>personagens</li>
-              <li id="btn-login">
-                <Link to={"/login"}> Fazer Login </Link>
-              </li>
-          </ul>
-        </div>
-      </div>
-    </React.Fragment>
-  )
+export default function NavBar(){
+
+    const [ showInputSearch, setInputSearchVisibilityy ] = useState<boolean>(false);
+    const [ showButtonConfig, setButtonConfigVisibility ] = useState<boolean>(false);
+    
+
+    return(
+       <nav className="navbar navbar-light  box-icons">
+          <div className="navbar-header">
+                
+             <a className="navbar-brand title-logo" href="###" >Educatoon</a>
+
+             <div className="nav-btns">
+                <div className="nav-item search-div" onMouseOver={ ()=>setInputSearchVisibilityy(true) }  onMouseOut={ ()=>setInputSearchVisibilityy(false) }>
+                    {
+                        showInputSearch && (
+                            <input className="search-input" type="text" placeholder="Search" aria-label="Search" />
+                        )
+                    }
+                    <div className="find-icon">
+                        <i className="fa fa-search"></i>
+                    </div>
+                </div>
+
+                <div className="nav-item config-div" onMouseOver={ ()=>setButtonConfigVisibility(true) }  onMouseOut={ ()=>setButtonConfigVisibility(false) }>
+                    
+                    { showButtonConfig && (
+                        <div className="configuracoes-div">
+                                <span> Configurações </span>
+                        </div>
+                        )
+                    }
+                    <div className="setting-icon" >
+                        <i className="fa fa-cog"></i>
+                    </div>
+                </div>
+             </div>
+          </div>
+      </nav>
+    );
 }
-
-export default Navbar;
