@@ -6,8 +6,10 @@ import { CadastroSemCargo } from "./pages/Cadastro/cadastro-sem-cargo/CadastroSe
 import { CadastroGuardiao } from "./pages/Cadastro/cadastro-guardiao-professor";
 import { CadastroEscola } from "./pages/Cadastro/cadastro-escola";
 import { SelectUser } from "./pages/selectUser/SelectUser";
-import { SelectHq } from "./pages/selectHq/SelectHq"
+import { SelectHq } from "./pages/selectHq/SelectHq";
+import { Category } from "./pages/category/Category";
 
+/*
 export const Content = () => {
   return (
     <Switch>
@@ -18,6 +20,8 @@ export const Content = () => {
       <Route exact path='/cadastroescola' component={CadastroEscola} />
       <Route exact path='/selectuser' component={SelectUser} />
       <Route exact path='/selecthq' component={SelectHq} />
+      <Route exact path='/category' component={Category} />
     </Switch>
   )
 }
+*/

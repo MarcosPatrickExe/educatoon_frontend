@@ -16,8 +16,8 @@ import susie from '../../assets/susie-planeta.png';
 
 export default function Category(){
 
-    const [showInputSearch, setInputSearchVisibilityy ] = useState<boolean>(false);
-    const [showButtonConfig, setButtonConfigVisibility ] = useState<boolean>(false);
+    const [ showInputSearch, setInputSearchVisibilityy ] = useState<boolean>(false);
+    const [ showButtonConfig, setButtonConfigVisibility ] = useState<boolean>(false);
     const [ arrayImages, changeImagesSequence ] = useState( [pat, susie, matt, pam, matofobico] );
 
 
