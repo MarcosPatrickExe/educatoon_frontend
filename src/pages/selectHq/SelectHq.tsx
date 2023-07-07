@@ -40,9 +40,11 @@ function SelectHq() {
             </div>
             <div className="secao-hqs">
               <div className="hqs-row flex">
+              <Link to={"/tirinha"}>
                 <div className="one-hq">
                   <img src={tirinhaPh}/>
                 </div>
+              </Link>
                 <div className="one-hq">
                   <img src={tirinhaPh2}/>
                 </div>

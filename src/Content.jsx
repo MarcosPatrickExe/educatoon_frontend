@@ -7,6 +7,7 @@ import { CadastroGuardiao } from "./pages/Cadastro/cadastro-guardiao-professor";
 import { CadastroEscola } from "./pages/Cadastro/cadastro-escola";
 import { SelectUser } from "./pages/selectUser/SelectUser";
 import { SelectHq } from "./pages/selectHq/SelectHq"
+import { Tirinha } from "./pages/tirinha/Tirinha";
 
 export const Content = () => {
   return (
@@ -18,6 +19,7 @@ export const Content = () => {
       <Route exact path='/cadastroescola' component={CadastroEscola} />
       <Route exact path='/selectuser' component={SelectUser} />
       <Route exact path='/selecthq' component={SelectHq} />
+      <Route exact path='/tirinha' component={Tirinha} />
     </Switch>
   )
 }

@@ -1,0 +1,51 @@
+.tirinha{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tirinha img{
+ width: 100%; 
+}
+
+.caixa-interacao{
+  width: 93%;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  background-color: #b2d9d8;
+  border-radius: 150px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.imagem-interacao{
+  width: 25%;
+  height: 260px;
+  background-color: blanchedalmond;
+  border: solid 8px;
+  border-radius: 100%;
+}
+
+.texto-interacao{
+  width: 70%;
+  padding-right: 50px;
+}
+
+.texto-interacao p {
+  font-size: 26px;
+}
+
+.btns-interacao{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btns-interacao button{
+  padding: 5px 21px;
+  background-color:#715AFF;
+  color: #FFF;
+  border-radius: 50px;
+}
