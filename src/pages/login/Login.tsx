@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './login.css';
 import personagens from "../../assets/personagens-login2.png";
 import facebookIcon from "../../assets/facebook-icon.svg";
 import gmailIcon from "../../assets/google-icon.svg";
 import linkedinIcon from "../../assets/linkedin-icon.svg";
-import Category from '../category/Category';
+import './login.css';
 
 
 function Login() {
@@ -46,9 +45,9 @@ function Login() {
                       </Link>
                   </button>
                   <button type="button" className="btn btn-primary" id="btn-cadastrar">
-                  <Link to={"/cadastrosemcargo"}>
-                      Criar Conta
-                  </Link>
+                      <Link to={"/cadastrosemcargo"}>
+                          Criar Conta
+                      </Link>
                   </button>
               </div>
               <a href="#">Esqueci minha senha</a>

@@ -15,6 +15,7 @@ import SelectHq from './pages/selectHq/SelectHq';
 import Tirinha from './pages/tirinha/Tirinha';
 // URLs DE CADA PAGINA:
 
+
 const browserRouter = createBrowserRouter(
     [
       { 
@@ -24,6 +25,10 @@ const browserRouter = createBrowserRouter(
       {
         path: "/login",
         element: <Login />
+      },
+      {
+        path: "/category",
+        element: <Category />
       },
       {
         path: "/cadastrosemcargo",

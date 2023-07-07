@@ -80,7 +80,7 @@ function SelectHq() {
           </li>
           <li className="page-item"><a className="page-link pagina-atual" href="#">1</a></li>
           <li className="page-item">
-            <a className="page-link" href="#" aria-label="Next">
+            <a className="page-link" href="##" aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
             </a>
           </li>
