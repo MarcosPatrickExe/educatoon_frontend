@@ -17,75 +17,81 @@ import tirinhaPh9 from "../../assets/select-hq/tirinha-ph9.svg";
 
 
 function SelectHq() {
+  
   return (
     <div className="select-hq-bg">
           <div className="select-corpo container">
             <div className="header-and-btns">
-              <div className='flex'>
-              <button><img src={arrow}/></button>
-                <h2>Educatoon</h2>
-              </div>
-              <div className='flex'>
-              <button><img src={search}/></button>
-              <button><img src={setting}/></button>
-              </div>
+                <div className='flex'>
+                    <button>
+                       <img src={arrow} alt="seta" />
+                    </button>
+                    <h2>Educatoon</h2>
+                </div>
+                <div className='flex'>
+                    <button><img src={search} alt="search"/></button>
+                    <button><img src={setting} alt="setting"/></button>
+                </div>
             </div>
             <p className="titulo-select-hqs">Explore os quadrinhos</p>
+
             <div className="filtros flex">
-              <a href="">Fáceis</a>
-              <a href="">Desafiadores</a>
-              <a href="">Engraçados</a>
-              <a href="">Temáticos</a>
-              <a href="">Turminha</a>
+                <a href="##">Fáceis</a>
+                <a href="##">Desafiadores</a>
+                <a href="##">Engraçados</a>
+                <a href="##">Temáticos</a>
+                <a href="##">Turminha</a>
             </div>
             <div className="secao-hqs">
               <div className="hqs-row flex">
-              <Link to={"/tirinha"}>
-                <div className="one-hq">
-                  <img src={tirinhaPh}/>
-                </div>
-              </Link>
-                <div className="one-hq">
-                  <img src={tirinhaPh2}/>
-                </div>
-                <div className="one-hq">
-                  <img src={tirinhaPh3}/>
-                </div>
-                <div className="one-hq">
-                  <img src={tirinhaPh4}/>
-                </div>
+                  <Link to={"/tirinha"}>
+                      <div className="one-hq">
+                          <img src={tirinhaPh} alt="comic"/>
+                      </div>
+                  </Link>
+                  <div className="one-hq">
+                      <img src={tirinhaPh2} alt="comic"/>
+                  </div>
+                  <div className="one-hq">
+                      <img src={tirinhaPh3} alt="comic"/>
+                  </div>
+                  <div className="one-hq">
+                      <img src={tirinhaPh4} alt="comic"/>
+                  </div>
               </div>
               <div className="hqs-row flex">
-                <div className="one-hq">
-                  <img src={tirinhaPh6}/>
-                </div>
-                <div className="one-hq">
-                  <img src={tirinhaPh7}/>
-                </div>
-                <div className="one-hq">
-                  <img src={tirinhaPh8}/>
-                </div>
-                <div className="one-hq">
-                  <img src={tirinhaPh9}/>
-                </div>
+                  <div className="one-hq">
+                    <img src={tirinhaPh6} alt="comic"/>
+                  </div>
+                  <div className="one-hq">
+                    <img src={tirinhaPh7} alt="comic"/>
+                  </div>
+                  <div className="one-hq">
+                    <img src={tirinhaPh8} alt="comic"/>
+                  </div>
+                  <div className="one-hq">
+                    <img src={tirinhaPh9} alt="comic"/>
+                  </div>
               </div>
             </div>
             <div className="paginacao">
               <nav aria-label="Page navigation example">
-        <ul className="pagination">
-          <li className="page-item">
-            <a className="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li className="page-item"><a className="page-link pagina-atual" href="#">1</a></li>
-          <li className="page-item">
-            <a className="page-link" href="##" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+                  <ul className="pagination">
+                    <li className="page-item">
+                        <a className="page-link" href="##" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li className="page-item">
+                        <a className="page-link pagina-atual" href="##">1</a>
+                    </li>
+                    <li className="page-item">
+                        <a className="page-link" href="##" aria-label="Next">
+                           <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                  </ul>
+               </nav>
             </div>
           </div>
     </div>

@@ -10,36 +10,40 @@ import pg6 from "../../assets/tirinha/pg-6.jpg";
 import pg7 from "../../assets/tirinha/pg-7.jpg";
 import pg8 from "../../assets/tirinha/pg-8-2.jpg";
 import pg9 from "../../assets/tirinha/pg-9.jpg";
-import Category from '../category/Category';
+
 
 
 function Tirinha() {
-  return (
-  <div className="tirinha container">
-    <img src={pg1} alt="" />
-    <img src={pg2} alt="" />
-    <img src={pg3} alt="" />
-    <img src={pg4} alt="" />
-    <img src={pg5} alt="" />
-    <img src={pg6} alt="" />
-    <img src={pg7} alt="" />
-    <img src={pg8} alt="" />
-    <div className="caixa-interacao">
-      <div className="imagem-interacao">
 
+  return (
+    <div className="tirinha container">
+      <img src={pg1} alt="" />
+      <img src={pg2} alt="" />
+      <img src={pg3} alt="" />
+      <img src={pg4} alt="" />
+      <img src={pg5} alt="" />
+      <img src={pg6} alt="" />
+      <img src={pg7} alt="" />
+      <img src={pg8} alt="" />
+
+      <div className="caixa-interacao">
+          <div className="imagem-interacao">
+          </div>
+
+          <div className="texto-interacao">
+              <p>RAUL OLHA PARA AS BOLINHAS DE GUDE EM SUAS MÃOS, E DIZ QUE TEM O TOTAL DE:</p>
+              <div className="btns-interacao">
+                  <button>5 </button>
+                  <button>2 </button>
+                  <button>7 </button>
+                  <button>3 </button>
+              </div>
+          </div>
       </div>
-      <div className="texto-interacao">
-        <p>RAUL OLHA PARA AS BOLINHAS DE GUDE EM SUAS MÃOS, E DIZ QUE TEM O TOTAL DE:</p>
-        <div className="btns-interacao">
-          <button>5 bolinhas</button>
-          <button>2 bolinhas</button>
-          <button>7 bolinhas</button>
-          <button>3 bolinhas</button>
-        </div>
-      </div>
+
+      <img src={pg9} alt="page final" />
+
     </div>
-  </div>
-    
   )
 }
 
