@@ -9,7 +9,7 @@ import matofobico from '../../assets/matofobico-planeta.png';
 import pat from '../../assets/patrick-planeta.png';
 import matt from '../../assets/matt-planeta.png';
 import susie from '../../assets/susie-planeta.png';
-import NavBar from '../../components/NavBar';
+import NavBar from '../../components/Navbar';
 
 
 

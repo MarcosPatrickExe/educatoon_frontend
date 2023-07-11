@@ -1,0 +1,56 @@
+.user-settings-bg{
+  background-color: #9273FF;
+}
+
+.inputs-box{
+  width: 50%;
+  padding: 45px;
+  border-radius: 50px;
+  background: #fff;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin-bottom: 45px;
+  margin-top: 45px;
+}
+
+.inputs-box p{
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  font-size: 36px;
+  color: #715AFF;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.titulo-branco h2{
+  color: #fff;
+}
+.inputs-box input, .inputs-box select{
+  margin-top: 15px;
+}
+
+.inputs-box select{
+  margin-bottom: 0px;
+}
+
+.endereco-escola-2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.endereco-escola-2 input{
+  width: 49%;
+}
+.margin-top{
+  margin-top: 15px;
+}
+
+#btn-cancelar{
+  padding: 5px 55px;
+  background-color: #fff;
+  /* border: solid 1px #715AFF; */
+  border-color: #fff;
+  border-radius: 25px;
+  color: #9CA2B0;
+}

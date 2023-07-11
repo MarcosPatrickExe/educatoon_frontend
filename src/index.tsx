@@ -13,6 +13,7 @@ import CadastroEscola from './pages/Cadastro/cadastro-escola/CadastroEscola';
 import SelectUser from './pages/selectUser/SelectUser';
 import SelectHq from './pages/selectHq/SelectHq';
 import Tirinha from './pages/tirinha/Tirinha';
+import UserSettings from './pages/userSettings/UserSettings'
 // URLs DE CADA PAGINA:
 
 
@@ -53,6 +54,10 @@ const browserRouter = createBrowserRouter(
       {
         path: "/tirinha",
         element: <Tirinha />
+      },
+      {
+        path: "/usersettings",
+        element: <UserSettings />
       }
     ]
 );
