@@ -30,7 +30,7 @@ function Home() {
               <button type="button">Ser um parceiro</button>
             </div>
         </div>
-        <div className="container secao-sobre-nos">
+        <div id="secao-sobre-nos" className="container secao-sobre-nos">
             <div className="sobre-nos-right">
                 <img src={personagensCaindo} alt="figura com personagens" />
             </div>
@@ -46,7 +46,7 @@ function Home() {
                 <button type="button">Veja mais</button>
             </div>
         </div>
-        <div className="container secao-vantagens">
+        <div id="secao-vantagens" className="container secao-vantagens">
           <h2>Por que nos escolher?</h2>
           <div className="card-vantagens">
             <div className="card-vantagem">
@@ -66,7 +66,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="container secao-personagens">
+        <div id="secao-personagens" className="container secao-personagens">
           <div className="personagens-caixas">
             <div className="personagens-caixa matt">
                <div className="container-personagem">
@@ -150,7 +150,8 @@ function Home() {
                           <p className="plano-valor">R$<span className="destaque">00</span>,00</p>
                           <p className="cifrao">/Por mês</p>
                       </div>
-                      <button type="button" className="conheca-me">Plano Escola Prata</button>
+                      {/* <button type="button" className="conheca-me">Plano Escola Prata</button> */}
+                      <p className="nome-plano">Plano Escola Prata</p>
                   </div>
                   <div className="descricao">
                       <p>Lorem Ipsum dolor </p>
@@ -169,7 +170,8 @@ function Home() {
                           <p className="plano-valor">R$<span className="destaque">00</span>,00</p>
                           <p className="cifrao">/Por mês</p>
                       </div>
-                      <button type="button" className="conheca-me">Plano Escola Ouro</button>
+                      {/* <button type="button" className="conheca-me">Plano Escola Ouro</button> */}
+                      <p className="nome-plano">Plano Escola Ouro</p>
                   </div>
                   <div className="descricao">
                       <p>Lorem Ipsum dolor </p>
@@ -188,7 +190,8 @@ function Home() {
                       <p className="plano-valor">R$<span className="destaque">00</span>,00</p>
                       <p className="cifrao">/Por mês</p>
                       </div>
-                      <button type="button" className="conheca-me">Plano Escola Aluno</button>
+                      {/* <button type="button" className="conheca-me">Plano Escola Aluno</button> */}
+                      <p className="nome-plano">Plano Escola Aluno</p>
                 </div>
                 <div className="descricao">
                       <p>Lorem Ipsum dolor </p>

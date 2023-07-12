@@ -32,7 +32,8 @@ p{
   font-size: 19px;
   font-weight: 600;
   background-color: #F3B700;
-  color: #1E1650;
+  color: #715AFF;
+  /* color: #1E1650; */
   border-radius: 25px;
   border-width: 0px;
   transition: all ease 300ms;
@@ -224,7 +225,7 @@ p{
   color: #577CFE;
 }
 
-.matt button:hover, .pam button:hover, .susie button:hover, .vanessinha button:hover, .patrick button:hover, .matofobico button:hover{
+.matt button:hover, .pam button:hover, #susie button:hover, #vanessinha button:hover, .patrick button:hover, .matofobico button:hover{
   background-color:#715AFF;
   color: #FFF;
 }
@@ -320,8 +321,8 @@ p{
   color: #fff;
 }
 .preco-plano {
-  margin-bottom:15px;
-  padding-top: 45px;
+  margin-bottom:25px;
+  padding-top: 55px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -344,7 +345,7 @@ p{
   color: #949494;
 }
 
-.plano-head button {
+.plano-head button, .nome-plano {
   border-radius: 25px;
   border-width: 0px;
   background-color: #6154B1;

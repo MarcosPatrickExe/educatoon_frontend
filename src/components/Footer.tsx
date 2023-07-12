@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './footer.css';
-
+import instagram from "../assets/instagram.svg";
+import linkedin from "../assets/linkedin.svg";
 
 function Footer() {
   return(
@@ -28,6 +29,10 @@ function Footer() {
           </div>
           <div className="caixa-rodape">
               <p className="titulo">Redes sociais</p>
+              <div className="flex-3">
+                <a href=""><img src={instagram}/></a>
+                <a href=""><img src={linkedin}/></a>
+              </div>
           </div>
       </div>
     </React.Fragment>

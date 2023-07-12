@@ -39,16 +39,22 @@ li{
   border: solid 2px #FFF;
   border-radius: 50px;
   font-weight: 600;
+  transition: all ease 300ms;
 }
 
 
 .navbar a{
   text-decoration: none;
-  color: #fff;
+  color: #FFF;
+  transition: all ease 300ms;
+}
+
+.navbar a:hover{
+  color: #f8d56b;
 }
 
 #btn-login:hover{
-  border: solid 2px #715AFF;
+  border: solid 2px #f8d56b;
   /* background-color: #FFF; */
   border-radius: 50px;
   font-weight: 600;
@@ -56,5 +62,21 @@ li{
 
 
 #btn-login a:hover{
-  color: #715AFF;
+  color: #f8d56b;
 }
+
+/* .button-assinar button {
+  padding: 10px 35px;
+  font-size: 19px;
+  font-weight: 600;
+  background-color: #F3B700;
+  color: #715AFF;
+  border-radius: 25px;
+  border-width: 0px;
+  transition: all ease 300ms;
+  #715AFF;
+}
+.button-assinar button:hover {
+  background-color:#715AFF;
+  color: #FFF;
+} */

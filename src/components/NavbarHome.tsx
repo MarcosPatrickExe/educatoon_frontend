@@ -13,9 +13,9 @@ function Navbar() {
         </div>
         <div className="links">
           <ul id="links-navbar">
-              <li>Sobre nós</li>
-              <li>Diferencial</li>
-              <li>personagens</li>
+              <li><a href="#secao-sobre-nos">Sobre nós</a></li>
+              <li><a href="#secao-vantagens">Diferencial</a></li>
+              <li> <a href="#secao-personagens">personagens</a></li>
               <li id="btn-login">
                 <Link to={"/login"}> Fazer Login </Link>
               </li>

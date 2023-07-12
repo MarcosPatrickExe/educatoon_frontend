@@ -19,3 +19,9 @@ justify-content: space-between;
   color: #715AFF !important;
   font-size: 40px;
 }
+
+.flex-3 img{
+  width: 40px; 
+  height: 40px; 
+  padding-right: 8px;
+}
