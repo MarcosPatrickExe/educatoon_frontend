@@ -3,14 +3,13 @@ import wave from '../../assets/wave.svg';
 import './Category.css';
 import cloud from '../../assets/cloud.png';
 import Colors from '../../components/Utils';
-import react, { useState } from 'react';
+import React, { useState } from 'react';
 import pam from '../../assets/pam-planeta.png';
 import matofobico from '../../assets/matofobico-planeta.png';
 import pat from '../../assets/patrick-planeta.png';
 import matt from '../../assets/matt-planeta.png';
 import susie from '../../assets/susie-planeta.png';
 import NavBar from '../../components/Navbar';
-
 
 
 export default function Category(){
@@ -96,7 +95,7 @@ export default function Category(){
 {/*-------------------------------------------------------------------------------------------------*/}
 
         </div>
-    );
+    )
 }
 
 // COMANDOS PARA FAZER O PULL E O PUSH DE UMA BRANCH ESPECIFICA: 

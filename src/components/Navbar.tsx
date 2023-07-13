@@ -1,8 +1,6 @@
-import {useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navBar.css';
-
-
 
 
 export default function NavBar( {setYellowColorButtons} :any ){
