@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import './navBar.css';
 
 
-
-
 export default function NavBar( {setYellowColorButtons} :any ){
 
     const currentColor :string = (setYellowColorButtons===true) ? '#F3B700' :'white';
