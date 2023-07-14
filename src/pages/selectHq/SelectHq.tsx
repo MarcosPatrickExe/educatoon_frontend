@@ -6,7 +6,7 @@ import Category from '../category/Category';
 import arrow from "../../assets/Icons/arrow.svg";
 import search from "../../assets/Icons/search.svg";
 import setting from "../../assets/Icons/setting.svg";
-import tirinhaPh from "../../assets/select-hq/tirinha-ph.svg";
+import tirinhaPh from "../../assets/select-hq/capa.svg";
 import tirinhaPh2 from "../../assets/select-hq/tirinha-ph2.svg";
 import tirinhaPh3 from "../../assets/select-hq/tirinha-ph3.svg";
 import tirinhaPh4 from "../../assets/select-hq/tirinha-ph4.svg";
