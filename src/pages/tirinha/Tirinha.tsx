@@ -9,11 +9,12 @@ import pg5 from "../../assets/tirinha/5.svg";
 import pg6 from "../../assets/tirinha/6.svg";
 import pg7 from "../../assets/tirinha/7.svg";
 import pg8 from "../../assets/tirinha/oito3.jpg";
-import pg9 from "../../assets/tirinha/pg-9.jpg";
-import pg10 from "../../assets/tirinha/10.svg";
-import pg11 from "../../assets/tirinha/11.svg";
-import pg12 from "../../assets/tirinha/12.svg";
-import pg13 from "../../assets/tirinha/13.svg";
+import pg9 from "../../assets/tirinha/9.jpg";
+import pg10 from "../../assets/tirinha/10.jpg";
+import pg11 from "../../assets/tirinha/11.jpg";
+import pg12 from "../../assets/tirinha/12.jpg";
+import pg13 from "../../assets/tirinha/13.jpg";
+
 function Tirinha() {
   const pg8ref = React.createRef<HTMLImageElement>();
   const pg9ref = React.createRef<HTMLImageElement>();
@@ -57,6 +58,11 @@ function Tirinha() {
         </div>
 
         <img ref={pg9ref} src={pg9} alt="page final" />
+
+        <img src={pg10} alt="sddsd" />
+        <img src={pg11} alt="sddsd" />
+        <img src={pg12} alt="sddsd" />
+        <img src={pg13} alt="sddsd" />
       </div>
     </div>
   );
