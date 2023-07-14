@@ -8,7 +8,7 @@ import pg4 from "../../assets/tirinha/4.svg";
 import pg5 from "../../assets/tirinha/5.svg";
 import pg6 from "../../assets/tirinha/6.svg";
 import pg7 from "../../assets/tirinha/7.svg";
-import pg8 from "../../assets/tirinha/pg-8-2.jpg";
+import pg8 from "../../assets/tirinha/oito3.jpg";
 import pg9 from "../../assets/tirinha/pg-9.jpg";
 import pg10 from "../../assets/tirinha/10.svg";
 import pg11 from "../../assets/tirinha/11.svg";
@@ -57,7 +57,6 @@ function Tirinha() {
         </div>
 
         <img ref={pg9ref} src={pg9} alt="page final" />
-       
       </div>
     </div>
   );
