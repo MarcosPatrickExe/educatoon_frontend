@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './tirinha.css';
 import pg1 from "../../assets/tirinha/pg-1.png";
@@ -15,34 +15,51 @@ import pg9 from "../../assets/tirinha/pg-9.jpg";
 
 function Tirinha() {
 
+  const pg8ref = React.createRef<HTMLImageElement>();
+  const pg9ref = React.createRef<HTMLImageElement>();
+
+
+  const moveToPreviousComic = ()=>{
+        let imgElement = pg8ref.current as HTMLImageElement;
+        imgElement.scrollIntoView();
+  }
+  const moveToNextComic = ()=>{
+        let imgElement2 = pg9ref.current as HTMLImageElement;
+        imgElement2.scrollIntoView();
+  }
+
+
+
   return (
-    <div className="tirinha container">
-      <img src={pg1} alt="" />
-      <img src={pg2} alt="" />
-      <img src={pg3} alt="" />
-      <img src={pg4} alt="" />
-      <img src={pg5} alt="" />
-      <img src={pg6} alt="" />
-      <img src={pg7} alt="" />
-      <img src={pg8} alt="" />
+    <div className="background">
+      <div className="tirinha container">
+        <img src={pg1} alt="" />
+        <img src={pg2} alt="" />
+        <img src={pg3} alt="" />
+        <img src={pg4} alt="" />
+        <img src={pg5} alt="" />
+        <img src={pg6} alt="" />
+        <img src={pg7} alt="" />
+        <img ref={pg8ref} src={pg8} alt="" />
 
-      <div className="caixa-interacao">
-          <div className="imagem-interacao">
-          </div>
+        <div className="caixa-interacao">
+            <div className="imagem-interacao">
+            </div>
 
-          <div className="texto-interacao">
-              <p>RAUL OLHA PARA AS BOLINHAS DE GUDE EM SUAS MÃOS, E DIZ QUE TEM O TOTAL DE:</p>
-              <div className="btns-interacao">
-                  <button>5 </button>
-                  <button>2 </button>
-                  <button>7 </button>
-                  <button>3 </button>
-              </div>
-          </div>
+            <div className="texto-interacao">
+                <p>RAUL OLHA PARA AS BOLINHAS DE GUDE EM SUAS MÃOS, E DIZ QUE TEM O TOTAL DE:</p>
+                <div className="btns-interacao">
+                    <button onClick={ moveToPreviousComic }> 5 </button>
+                    <button onClick={ moveToNextComic }> 9 </button>
+                    <button onClick={ moveToPreviousComic }> 7 </button>
+                    <button onClick={ moveToPreviousComic }> 10 </button>
+                </div>
+            </div>
+        </div>
+
+        <img ref={pg9ref} src={pg9} alt="page final" />
+
       </div>
-
-      <img src={pg9} alt="page final" />
-
     </div>
   )
 }
