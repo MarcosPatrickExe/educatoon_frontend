@@ -10,6 +10,7 @@ import pat from '../../assets/patrick-planeta.png';
 import matt from '../../assets/matt-planeta.png';
 import susie from '../../assets/susie-planeta.png';
 import NavBar from '../../components/Navbar';
+import { Link } from 'react-router-dom';
 
 
 export default function Category(){
@@ -60,7 +61,9 @@ export default function Category(){
             </div>
 
             <div className="div-bottom-center-text  col-4 col-sm-3 col-md-3 col-lg-2  p-1  p-sm-1" style={{backgroundColor: Colors.YELLOW }}>
-                <p id="iniciar"> Iniciar </p>
+                <Link to="/selecthq">
+                    <p id="iniciar"> Iniciar </p>
+                </Link>
             </div>
            
 

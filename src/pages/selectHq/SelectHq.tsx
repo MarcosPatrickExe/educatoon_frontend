@@ -24,7 +24,9 @@ function SelectHq() {
             <div className="header-and-btns">
                 <div className='flex'>
                     <button>
-                       <img src={arrow} alt="seta" />
+                        <Link to="/category">
+                          <img src={arrow} alt="seta" />
+                        </Link>
                     </button>
                     <h2>Educatoon</h2>
                 </div>
