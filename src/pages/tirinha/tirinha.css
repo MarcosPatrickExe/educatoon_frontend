@@ -1,37 +1,33 @@
-:root{
-    --purple: #550475;
-    --yellow: rgb(255, 211, 124);
+:root {
+  --purple: #550475;
+  --yellow: rgb(255, 211, 124);
 }
-
 
 /* Comic Neue: */
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
 
 /* Shadows into light: */
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 
-.background{
-   background-color: rgb(255, 255, 255);
+.background {
+  background-color: rgb(255, 255, 255);
 }
 
-
-.tirinha{
+.tirinha {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.tirinha img{
- width: 100%; 
+.tirinha img {
+  width: 100%;
 }
 
-.caixa-interacao{
+.caixa-interacao {
   position: relative;
   width: 96%;
   height: 43vh;
-  top: -330px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,11 +37,11 @@
   margin-top: 60px;
 }
 
-.imagem-interacao{
+.imagem-interacao {
   position: absolute;
   width: 25%;
   height: 100%;
-  background-image: url("../../assets/tirinha/character image.png");/* blanchedalmond */
+  background-image: url("../../assets/tirinha/character image.png"); /* blanchedalmond */
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: left;
@@ -54,13 +50,13 @@
   border-radius: 100%;
 }
 
-.texto-interacao{
+.texto-interacao {
   width: 100%;
   height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(175deg,skyblue 70%, rgba(1, 61, 85, 0.2) 10% );
+  background: linear-gradient(175deg, skyblue 70%, rgba(1, 61, 85, 0.2) 10%);
   padding-top: 20px;
   padding-left: 27%;
   padding-right: 5%;
@@ -72,12 +68,12 @@
 
 .texto-interacao p {
   font-size: 2.1vw;
- /* font-family: 'Shadows Into Light', cursive; */
-  font-family: cursive; 
+  /* font-family: 'Shadows Into Light', cursive; */
+  font-family: cursive;
   font-weight: bold;
 }
 
-.btns-interacao{
+.btns-interacao {
   width: 100%;
   display: flex;
   align-items: center;
@@ -85,19 +81,19 @@
   gap: 10%;
 }
 
-.btns-interacao button{
+.btns-interacao button {
   padding: 5px 21px;
   background-color: var(--yellow); /* rgb(248, 231, 161) */
   color: var(--purple);
   border-radius: 50px;
   padding: 0 25px 0 25px;
-  font-family: 'Comic neue', cursive;
+  font-family: "Comic neue", cursive;
   font-size: 1.9vw;
   font-weight: bold;
   border: 2px solid var(--purple);
 }
 
-.btns-interacao button:hover{
+.btns-interacao button:hover {
   background-color: var(--purple); /* rgb(248, 231, 161) */
   color: var(--yellow);
   border: 2px solid var(--purple);
